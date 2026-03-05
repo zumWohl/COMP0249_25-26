@@ -56,10 +56,10 @@ def main():
                     # Polar -> Cartesian
                     rad = math.radians(angle)
 
-
+                    
                     # Activity 1: Converting Range/Bearing Measurements
-                    x_polar_to_cart = 10 # Modify this line
-                    y_polar_to_cart = 10 # Modify this line                    
+                    x_polar_to_cart = distance * math.cos(rad) 
+                    y_polar_to_cart = distance * math.sin(rad)                    
                     # End of Activity 1
 
                     x = cx + (x_polar_to_cart * SCALE_RATIO)

@@ -78,7 +78,7 @@ def solve_point_to_plane(src, dst, dst_normals):
         d = dst[i]
         n = dst_normals[i]
         # Activity 2: Calculate cross term
-        cross_term = 1000 # Modify this line, see the formulation in the lab instruction 
+        cross_term = s[0]*n[1] - s[1]*n[0] 
         # End of Activity 2
         A.append([cross_term, n[0], n[1]])
         b.append(np.dot(d - s, n))
