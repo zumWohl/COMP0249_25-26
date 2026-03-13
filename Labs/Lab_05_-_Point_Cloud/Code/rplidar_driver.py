@@ -31,7 +31,7 @@ class LidarDriver:
     def _detect_port(self):
         os_name = platform.system()
         if os_name == 'Windows':
-            return 'COM8'
+            return 'COM4'
         elif os_name == 'Darwin':
             return '/dev/tty.SLAB_USBtoUART'
         else:
